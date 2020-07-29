@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đăng nhập tài khoản</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="main">
+        <div id="contentMain">
+            <div class="content">
+                <h1>Đăng nhập tài khoản</h1>
+                <div class="socialLogin">
+                    <p>
+                        <a class="btn facebook" href="">Đăng nhập qua Facebook</a>
+                    </p>
+                    <p>
+                        <a class="btn google" href="">Đăng nhập qua Google</a>
+                    </p>
+                    <p>
+                        <a class="btn zalo" href="">Đăng nhập qua Zalo</a>
+                    </p>
+                </div>
+                <div class="from-login">
+                    <form action="/account/login" method="POST">
+                        <p>
+                            <label class="title">Đăng nhập bằng tài khoản hoặc gmail</label>
+                            <input type="text" class="textfield" data-val="true" data-val-required="Nhập tên đăng nhập của bạn" id="UserName" maxlength="32" name="UserName" placeholder="Nhập email hoặc số điện thoại">
+                            <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+                        </p>
+                        <p>
+                            <input type="password" class="textfield" data-val="true" data-val-required="Nhập mật khẩu của bạn" id="Password" maxlength="32" name="Password" placeholder="Nhập mật khẩu">
+                            <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                        </p>
+                        <p>
+                            <button type="submit" class="btn btn-login meta">Đăng nhập</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

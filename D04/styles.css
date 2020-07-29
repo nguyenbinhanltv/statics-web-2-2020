@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #659999, #f4791f);
+    font-family: 'Inconsolata', monospace;
+}
+
+.output-text {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    font-size: 5rem;
+    min-height: 20rem;
+    width: 70%;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    animation: rotate-diagonal-1 0.4s linear both;
+}
+
+.input-text {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    font-size: 2rem;
+    min-height: 7rem;
+    width: 70%;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    animation: rotate-diagonal-1 0.4s linear both;
+}
+
+#input-text {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Inconsolata', monospace;
+    padding: 0px 3px;
+    width: 50%;
+    min-height: 2rem;
+    font-size: xx-large;
+    border: 2px solid black;
+}
+
+#input-text:hover {
+    transition: 0.4s;
+    box-shadow: 0px 10px 10px 0px rgba(255, 255, 255, 0.8);
+}
+
+#btn-start {
+    cursor: pointer;
+    font-family: 'Inconsolata', monospace;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border:2px solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+    padding: 2% 10%;
+    outline: none;
+    font-size: xx-large;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.8);
+    animation: buttonmove 4s linear infinite;
+}
+
+#btn-start:hover {
+    color: white;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 1);
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+
+@keyframes buttonmove {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes text-blur-out {
+    0% {
+      filter: blur(0.01);
+    }
+    100% {
+      filter: blur(12px) opacity(0%);
+    }
+}
+
+@keyframes rotate-diagonal-1 {
+    0% {
+      transform: rotate3d(1, 1, 0, 0deg);
+    }
+    50% {
+      transform: rotate3d(1, 1, 0, -180deg);
+    }
+    100% {
+      transform: rotate3d(1, 1, 0, -360deg);
+    }
+}

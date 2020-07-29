@@ -1,0 +1,55 @@
+body {
+    background: url('./images/background.jpg') no-repeat scroll;
+    background-size: cover;
+    font-family: 'Gayathri', sans-serif;
+}
+
+li {
+    display: inline;
+}
+
+.button-menu {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    margin: 4px 2px;
+    border: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: grab;
+    outline: none;
+    transition: 0.5s;
+    box-shadow: 0px 1px 1px 0px;
+}
+
+.button-menu:hover {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    transition: 0.5s;
+    box-shadow: 0px 4px 4px 0px;
+}
+
+.find-game {
+    margin: 0 auto;
+    display: block;
+}
+
+.input-game,.login-account {
+    margin: 4px 2px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.login-account:hover {
+    cursor: grab;
+    box-shadow: 0px 4px 4px 0px;
+}
+
+.list-game {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+}

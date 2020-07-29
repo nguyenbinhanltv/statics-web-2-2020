@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hihi Các bạn</title>
+</head>
+<body style="background: linear-gradient(to left, #EE7752, #E73C7E, #23A6D5, #23D5AB); font-family: 'Titillium Web', sans-serif;">
+    <h1 style="text-align: center;">Đây là danh sách xàm
+        <h2 style="color: #EE7752;">Baby shark to do to do</h2>
+    </h1>
+    <ol>
+        <li>Đây là số 1</li>
+        <li>Đây là số 2</li>
+        <li>Đây là số 3</li>
+        <ul>
+            <li>Đây là đầu danh sách</li>
+            <li>Đây là giữa danh sách</li>
+            <li>Đây là cuối danh sách</li>
+        </ul>
+    </ol>
+    <br>Tạm biệt các bạn!!!</br>
+    <input type="text" style="margin: 0 auto; display: block;" id="input-data">
+    <button style="color: dark; background-color: burlywood; margin: 0 auto; display: block;" id="create-data">Nhấn đi ku !!!</button>
+    <script>
+        const inputData = document.getElementById('input-data');
+        const createData = document.getElementById('create-data');
+
+        createData.onclick = function() {
+            if(inputData) {
+                alert(inputData.value);
+            }
+        };
+    </script>
+</body>
+</html>
